@@ -14,7 +14,6 @@
 <body>
   <div class="container py-5">
     <h1 class="text-center">Tiket Boy</h1>
-  <form action="#" onsubmit="validate()">
     <div class="form-group">
       <label for="nama">Nama Pelanggan : </label>
       <input type="text" autocomplete="off" id="np" class="form-control">
@@ -35,8 +34,7 @@
       <label for="nama">Jumlah Tiket : </label>
       <input type="number" autocomplete="off" id="jt" class="form-control">
     </div>
-    <button type="submit" class="btn btn-primary w-100 mt-4">Cetak</button>
-  </form>
+    <button type="submit" class="btn btn-primary w-100 mt-4" onclick="validate()">Cetak</button>
   <div id="res" class="py-3"></div>
   </div>
 </body>

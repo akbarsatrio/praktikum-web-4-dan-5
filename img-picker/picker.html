@@ -10,6 +10,7 @@
   <div class="container py-5 text-center">
     <h1>Pilih Gambar</h1>
     <select id="picker" class="form-control" oninput="pick()">
+      <option value="all">Pilih Salah Satu</option>
       <option value="monyet">Monyet</option>
       <option value="gajah">Gajah</option>
       <option value="kucing">Kucing</option>
@@ -30,7 +31,7 @@
     for (let i = 0; i < arr.length; i++) {  //hitung panjang array untuk melakukan perulangan.
       if(picker.value == arr[i]) { //jika value dari picker tsb sama dengan isi dari array tsb maka jalankan statement true.
         img.setAttribute("src", "img/" + arr[i] + ".jpg"); //ambil atribut src lalu ganti sesuai isi namanya dari dalam array
-        alert("Ini adalah gambar " + arr[i] + ".jpg"); //ini buat alert aja sih
+        window.alert("Ini adalah gambar " + arr[i] + ".jpg"); //ini buat alert aja sih
       }
     }
   }
