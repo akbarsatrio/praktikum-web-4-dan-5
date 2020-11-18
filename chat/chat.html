@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Kita</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table, td {
+      padding: .5rem;
+    }
+  </style>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <td>
+        <div id="showChat"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <form action="#" onsubmit="send()">
+          <input type="text" required id="inp">
+          <button type="submit">Kirim</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+<script type="text/javascript">
+		
+  function send() {
+    
+    let x = document.getElementById('inp').value;
+    let y  = document.getElementById('showChat');
+    
+    y.innerHTML = y.innerHTML + x + "<br>";
+  }
+</script>
+</html>
